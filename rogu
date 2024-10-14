@@ -1,0 +1,102 @@
+C:\pleiades\2024-06\kadai_002\nagoyameshi>heroku logs
+ »   Warning: heroku update available from 9.0.0 to 9.3.0.
+2024-10-14T13:53:18.735481+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:18.735483+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:18.735484+00:00 app[web.1]: at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:18.735484+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.11.jar!/:6.1.11]      
+2024-10-14T13:53:18.735484+00:00 app[web.1]: ... 24 common frames omitted       
+2024-10-14T13:53:18.735485+00:00 app[web.1]:
+2024-10-14T13:53:18.810351+00:00 heroku[web.1]: Process exited with status 1    
+2024-10-14T13:53:18.833036+00:00 heroku[web.1]: State changed from starting to crashed
+2024-10-14T13:53:18.836735+00:00 heroku[web.1]: State changed from crashed to starting
+2024-10-14T13:53:24.000000+00:00 app[api]: Build succeeded
+2024-10-14T13:53:24.051329+00:00 heroku[web.1]: Starting process with command `java -Dserver.port=47125 $JAVA_OPTS -jar -Dspring.profiles.active=production target/*.jar`
+2024-10-14T13:53:24.556568+00:00 app[web.1]: Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+2024-10-14T13:53:24.559281+00:00 app[web.1]: Picked up JAVA_TOOL_OPTIONS: -XX:+UseContainerSupport -XX:MaxRAM=536870912 -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+2024-10-14T13:53:25.299665+00:00 app[web.1]:
+2024-10-14T13:53:25.299685+00:00 app[web.1]: .   ____          _            __ _ _
+2024-10-14T13:53:25.299685+00:00 app[web.1]: /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2024-10-14T13:53:25.299686+00:00 app[web.1]: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2024-10-14T13:53:25.299686+00:00 app[web.1]: \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2024-10-14T13:53:25.299686+00:00 app[web.1]: '  |____| .__|_| |_|_| |_\__, | / / / /
+2024-10-14T13:53:25.299687+00:00 app[web.1]: =========|_|==============|___/=/_/_/_/
+2024-10-14T13:53:25.299687+00:00 app[web.1]:
+2024-10-14T13:53:25.300373+00:00 app[web.1]: :: Spring Boot ::                (v3.3.2)
+2024-10-14T13:53:25.300375+00:00 app[web.1]:
+2024-10-14T13:53:25.420402+00:00 app[web.1]: 2024-10-14T13:53:25.416Z  INFO 2 --- [           main] c.e.nagoyameshi.NagoyameshiApplication   : Starting NagoyameshiApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 2 (/app/target/nagoyameshi-0.0.1-SNAPSHOT.jar started by u20547 in /app)
+2024-10-14T13:53:25.421530+00:00 app[web.1]: 2024-10-14T13:53:25.421Z  INFO 2 --- [           main] c.e.nagoyameshi.NagoyameshiApplication   : The following 1 profile is active: "production"
+2024-10-14T13:53:26.378428+00:00 app[web.1]: 2024-10-14T13:53:26.378Z  INFO 2 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T13:53:26.442435+00:00 app[web.1]: 2024-10-14T13:53:26.442Z  INFO 2 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 9 JPA repository interfaces.
+2024-10-14T13:53:26.966235+00:00 app[web.1]: 2024-10-14T13:53:26.966Z  INFO 2 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 47125 (http)
+2024-10-14T13:53:26.976984+00:00 app[web.1]: 2024-10-14T13:53:26.976Z  INFO 2 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T13:53:26.977156+00:00 app[web.1]: 2024-10-14T13:53:26.977Z  INFO 2 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-10-14T13:53:27.007566+00:00 app[web.1]: 2024-10-14T13:53:27.007Z  INFO 2 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T13:53:27.008485+00:00 app[web.1]: 2024-10-14T13:53:27.008Z  INFO 2 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1476 ms
+2024-10-14T13:53:27.111177+00:00 app[web.1]: 2024-10-14T13:53:27.109Z  INFO 2 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T13:53:27.372215+00:00 app[web.1]: 2024-10-14T13:53:27.371Z  INFO 2 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e40fbb3
+2024-10-14T13:53:27.373605+00:00 app[web.1]: 2024-10-14T13:53:27.373Z  INFO 2 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T13:53:27.481103+00:00 app[web.1]: 2024-10-14T13:53:27.480Z  INFO 2 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T13:53:27.523368+00:00 app[web.1]: 2024-10-14T13:53:27.523Z  INFO 2 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-14T13:53:27.548306+00:00 app[web.1]: 2024-10-14T13:53:27.548Z  INFO 2 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T13:53:27.777654+00:00 app[web.1]: 2024-10-14T13:53:27.777Z  INFO 2 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T13:53:27.841746+00:00 app[web.1]: 2024-10-14T13:53:27.841Z  WARN 2 --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-10-14T13:53:28.601624+00:00 app[web.1]: 2024-10-14T13:53:28.601Z  INFO 2 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T13:53:28.604007+00:00 app[web.1]: 2024-10-14T13:53:28.603Z  INFO 2 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T13:53:28.796022+00:00 app[web.1]: 2024-10-14T13:53:28.795Z  INFO 2 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-14T13:53:29.184405+00:00 app[web.1]: 2024-10-14T13:53:29.184Z  WARN 2 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stripeService': Injection of autowired dependencies failed
+2024-10-14T13:53:29.184819+00:00 app[web.1]: 2024-10-14T13:53:29.184Z  INFO 2 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T13:53:29.186115+00:00 app[web.1]: 2024-10-14T13:53:29.185Z  INFO 2 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-14T13:53:29.195293+00:00 app[web.1]: 2024-10-14T13:53:29.195Z  INFO 2 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-14T13:53:29.196342+00:00 app[web.1]: 2024-10-14T13:53:29.196Z  INFO 2 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-10-14T13:53:29.205599+00:00 app[web.1]: 2024-10-14T13:53:29.205Z  INFO 2 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger :
+2024-10-14T13:53:29.205600+00:00 app[web.1]:
+2024-10-14T13:53:29.205601+00:00 app[web.1]: Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-14T13:53:29.231379+00:00 app[web.1]: 2024-10-14T13:53:29.227Z ERROR 2 --- [           main] o.s.boot.SpringApplication               : Application run failed
+2024-10-14T13:53:29.231380+00:00 app[web.1]:
+2024-10-14T13:53:29.231380+00:00 app[web.1]: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stripeService': Injection of autowired dependencies failed
+2024-10-14T13:53:29.231381+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514) ~[spring-beans-6.1.11.jar!/:6.1.11]      
+2024-10-14T13:53:29.231382+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231382+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231382+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231383+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231383+00:00 app[web.1]: at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231383+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231383+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231384+00:00 app[web.1]: at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231384+00:00 app[web.1]: at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231384+00:00 app[web.1]: at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231387+00:00 app[web.1]: at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar!/:3.3.2]
+2024-10-14T13:53:29.231387+00:00 app[web.1]: at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar!/:3.3.2] 
+2024-10-14T13:53:29.231387+00:00 app[web.1]: at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar!/:3.3.2]
+2024-10-14T13:53:29.231387+00:00 app[web.1]: at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar!/:3.3.2]     
+2024-10-14T13:53:29.231388+00:00 app[web.1]: at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar!/:3.3.2]    
+2024-10-14T13:53:29.231388+00:00 app[web.1]: at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar!/:3.3.2]    
+2024-10-14T13:53:29.231388+00:00 app[web.1]: at com.example.nagoyameshi.NagoyameshiApplication.main(NagoyameshiApplication.java:10) ~[!/:0.0.1-SNAPSHOT]        
+2024-10-14T13:53:29.231389+00:00 app[web.1]: at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+2024-10-14T13:53:29.231389+00:00 app[web.1]: at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]       
+2024-10-14T13:53:29.231389+00:00 app[web.1]: at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2024-10-14T13:53:29.231389+00:00 app[web.1]: at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+2024-10-14T13:53:29.231390+00:00 app[web.1]: at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[nagoyameshi-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+2024-10-14T13:53:29.231390+00:00 app[web.1]: at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[nagoyameshi-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+2024-10-14T13:53:29.231390+00:00 app[web.1]: at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[nagoyameshi-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+2024-10-14T13:53:29.231390+00:00 app[web.1]: Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'stripe.api.secret' in value "${stripe.api.secret}"
+2024-10-14T13:53:29.231390+00:00 app[web.1]: at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231407+00:00 app[web.1]: at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231407+00:00 app[web.1]: at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231407+00:00 app[web.1]: at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231408+00:00 app[web.1]: at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.1.11.jar!/:6.1.11]        
+2024-10-14T13:53:29.231408+00:00 app[web.1]: at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231408+00:00 app[web.1]: at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231408+00:00 app[web.1]: at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231411+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231412+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231412+00:00 app[web.1]: at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.11.jar!/:6.1.11]
+2024-10-14T13:53:29.231412+00:00 app[web.1]: at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.11.jar!/:6.1.11]      
+2024-10-14T13:53:29.231413+00:00 app[web.1]: ... 24 common frames omitted       
+2024-10-14T13:53:29.231413+00:00 app[web.1]:
+2024-10-14T13:53:29.335434+00:00 heroku[web.1]: Process exited with status 1    
+2024-10-14T13:53:29.356797+00:00 heroku[web.1]: State changed from starting to crashed
+2024-10-14T13:54:11.796085+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nagoyameshi1014-a2bf12be017f.herokuapp.com request_id=d2f8b825-aee2-4fe4-a2bd-0e60bd1bede8 fwd="14.10.140.96" dyno= connect= service= status=503 bytes= protocol=https
+2024-10-14T13:54:12.628086+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nagoyameshi1014-a2bf12be017f.herokuapp.com request_id=935fcd1e-27a9-4276-a5fd-3c605643470f fwd="14.10.140.96" dyno= connect= service= status=503 bytes= protocol=https
+2024-10-14T13:54:59.193947+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=nagoyameshi1014-a2bf12be017f.herokuapp.com request_id=064b44a4-85c8-445d-bbe4-83767c2906cc fwd="14.10.140.96" dyno= connect= service= status=503 bytes= protocol=https
+2024-10-14T13:54:59.788942+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nagoyameshi1014-a2bf12be017f.herokuapp.com request_id=21b4c883-c6d5-422c-8d47-011c3c69fa9b fwd="14.10.140.96" dyno= connect= service= status=503 bytes= protocol=https
